@@ -1,4 +1,4 @@
 import random
-choice = ["rock", "paper", "scissors"]
+choices = ["rock", "paper", "scissors"]
 
-computer_choice =random.choice(choice)
+computer_choice =random.choice(choices)
