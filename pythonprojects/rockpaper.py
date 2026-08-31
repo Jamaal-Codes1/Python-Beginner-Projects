@@ -3,6 +3,10 @@ choices = ["rock", "paper", "scissors"]
 
 computer_choice =random.choice(choices)
 
+player_score = 0
+computer_score = 0
+
+
 your_choice = input("selct from; rock, paper, scissors").lower()
 while your_choice not in choices:
     print("try again")
