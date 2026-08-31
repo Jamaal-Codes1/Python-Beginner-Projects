@@ -12,8 +12,6 @@ while player_score <2 and computer_score <2:
     while your_choice not in choices:
         print("try again")
         your_choice = input("selct from; rock, paper, scissors").lower()
-
-
     if your_choice == computer_choice:
         print("It's a draw!")
     elif your_choice == "rock" and computer_choice == "scissors":
