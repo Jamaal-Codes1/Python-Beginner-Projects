@@ -16,10 +16,14 @@ while your_choice not in choices:
 if your_choice == computer_choice:
     print("It's a draw!")
 elif your_choice == "rock" and computer_choice == "scissors":
-    print(f"Player wins, computer chose {computer_choice}")
+    print(f"Player won round, computer chose {computer_choice}")
+    player_score += 1
 elif your_choice == "paper" and computer_choice == "rock":
-    print(f"Player wins, computer chose {computer_choice}")
+    print(f"Player won round, computer chose {computer_choice}")
+    player_score += 1
 elif your_choice == "scissors" and computer_choice == "paper":
-    print(f"Player wins, computer chose {computer_choice}")
+    print(f"Player won round, computer chose {computer_choice}")
+    player_score += 1
 else:
     print(f"Player loses, computer chose {computer_choice}")
+    computer_score += 1
