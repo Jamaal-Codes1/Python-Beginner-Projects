@@ -1,12 +1,12 @@
 import random
 choices = ["rock", "paper", "scissors"]
 
-computer_choice =random.choice(choices)
 
 player_score = 0
 computer_score = 0
 
 while player_score <2 and computer_score <2:
+    computer_choice =random.choice(choices)
         
     your_choice = input("selct from; rock, paper, scissors").lower()
     while your_choice not in choices:
@@ -28,3 +28,7 @@ while player_score <2 and computer_score <2:
     else:
         print(f"Player loses, computer chose {computer_choice}")
         computer_score += 1
+if player_score == 2:
+    print("Player has won")
+else:
+    print("player has lost")
