@@ -30,17 +30,20 @@ while option != 4:
                 print(f"{index}. {task}")
         input("press enter to return to menu")
     elif option == 3:
-        for index, task in enumerate(tasks, start=1):
-            print(f"{index}. {task}")
+        if not tasks:
+            print("You have no tasks to remove.")
+        else:
+            for index, task in enumerate(tasks, start=1):
+                print(f"{index}. {task}")
 
-        removal = int(input("Which number task do you want to remove: "))
-        removal -= 1
+            removal = int(input("Which number task do you want to remove: "))
+            removal -= 1
 
-        removed_task = tasks.pop(removal)
+            removed_task = tasks.pop(removal)
 
-        print(f"The task {removed_task} has been removed")
+            print(f"The task {removed_task} has been removed")
 
-        for index, task in enumerate(tasks, start=1):
-            print(f"{index}. {task}")
+            for index, task in enumerate(tasks, start=1):
+                print(f"{index}. {task}")
 
-        input("Press Enter to return to menu...")
+            input("Press Enter to return to menu...")
