@@ -28,3 +28,4 @@ while option != 4:
         else:
             for index, task in enumerate(tasks, start=1):
                 print(f"{index}. {task}")
+        input("press enter to return to menu")
